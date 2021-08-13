@@ -1,13 +1,14 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 body {
     margin: 30px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     font-size: 14px;
 }
-
 
 .container {
     display: block;
@@ -15,8 +16,6 @@ body {
     width: 50%;
     -webkit-text-size-adjust: none;
 }
-
-
 
 .textarea {
     font-family: monospace;
@@ -30,11 +29,11 @@ body {
     width: 25rem;
 }
 
-
 .textarea b {
     color: rgb(255, 51, 0);
 }
 
-.hidden, .csv-details {
+.hidden,
+.csv-details {
     display: none;
 }
