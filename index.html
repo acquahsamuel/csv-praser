@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSV file processing assesment </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h4> CSV file processing assesment </h4>
+        <label>Select a CSV file to be processed in the sample-files folder: </label>
+        <p>or </p>
+        <div class="">
+            <p> Download csv samples to upload </p>
+            <a href="csv-sample/csv-01.csv" download="csv-01.csv"> csv-01</a> <br>
+            <a href="csv-sample/csv-02.csv" download="csv-01.csv"> csv-02</a> <br>
+            <a href="csv-sample/bad-csv.csv" download="csv-01.csv"> bad-cv</a> <br>
+        </div>
+
+        <br><br>
+        <input type="file" id="cvsfile" onchange="loadCSVFile(event);">
+        <br><br>
+        <section class="csv-details">
+            <h4>CSV Rows</h4>
+            <div id="head-text-div" class="textarea" contenteditable> hwl </div>
+            <br><br>
+            <h4> CSV values: </h4>
+            <div id="text-div" class="textarea" contenteditable> hwl </div>
+            <br><br>
+            <h4>Processed CSV values: </h4>
+            <div id="pro-text-div" class="textarea" contenteditable></div>
+        </section>
+        <textarea id="original" class="hidden"></textarea>
+        <textarea id="processed" class="hidden"></textarea>
+
+
+
+    </div>
+
+
+
+</body>
+
+
+<script src="js/csv.js"></script>
+
+</html>
